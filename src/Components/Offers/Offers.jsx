@@ -1,5 +1,5 @@
 import React from 'react'
-import './offers.css'
+import './Offers.css'
 import exclusive from "../../assets/exclusive.webp"
 const Offers = () => {
   return (
