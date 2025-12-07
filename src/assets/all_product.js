@@ -5,7 +5,9 @@ import p4_img from '../assets/p4_img.jpg'
 import p5_img from '../assets/p5.png'
 import p6_img from '../assets/p6_img.webp'
 import p7_img from '../assets/kid1.jpg'
-import p8_img from '../assets/kid4.webp'
+import pimg from '../assets/pimg.png'
+import exclusive from '../assets/exclusive.webp'
+import pimg2 from '../assets/pimg2.webp'
 import kids_image5 from '../assets/Kids_image5.jpg' // correct case
 import kids_image6 from '../assets/kids_image6.jpg'
 import kids_image7 from '../assets/kids_image7.jpg'
@@ -46,7 +48,8 @@ import kid12 from '../assets/kid12.webp'
 import kid17 from '../assets/kid17.webp'
 import kid18 from '../assets/kid18.webp'
 import kid20 from '../assets/kid20.webp'
-
+import kid_13 from '../assets/kid_13.webp'
+import kidBanner from '../assets/KidBanner.webp'
 
 
 //import p12_img from '../assets/women6.webp'
@@ -77,64 +80,64 @@ import kid20 from '../assets/kid20.webp'
 let all_product = [
     {
         id: 1,
-        name: "Kurti",
+        name: "dummyName",
         category: "women",
         image: p1_img,
         new_price: 50.0,
         old_price: 80.5
     },
 
-    { id: 2, name: "Jeans", category: "Men", image:p2_img, new_price: 60.0, old_price: 90.5 },
-    { id: 3, name: "Dress", category: "Women", image:p3_img, new_price: 75.0, old_price: 120.0 },
-    { id: 4, name: "Jersey", category: "Men", image: p4_img, new_price: 90.0, old_price: 140.0 },
-    { id: 5, name: "T-Shirt", category: "Men", image: p5_img, new_price: 45.0, old_price: 70.0 },
-    { id: 6, name: "Saree", category: "Women", image: p6_img, new_price: 85.0, old_price: 130.0 },
-    { id: 7, name: "Shirt", category: "Kids", image: p7_img, new_price: 95.0, old_price: 150.0 },
-    { id: 8, name: "Top", category: "Kids", image: p8_img, new_price: 55.0, old_price: 100.0 },
-    { id: 9, name: "Frock", category: "Kids", image: kids_image5, new_price: 55.0, old_price: 100.0 },
-    { id: 10, name: "Jacket", category: "Kids", image: kids_image6, new_price: 65.0, old_price: 100.0 },
-    { id: 11, name: "Jeans", category: "Kids", image: kids_image7, new_price: 75.0, old_price: 100.0 },
-    { id: 13, name: "jeans", category: "Kids", image: kids_image9, new_price: 90.0, old_price: 100.0 },
-    { id:15, name: "gym_outfit", category: "women", image:p1_img, new_price: 60.0, old_price: 90.5 },
-    { id:16, name: "Jeans", category: "Men", image:mens_image_8, new_price: 60.0, old_price: 90.5 },
-     { id:17, name: "Shirt", category: "Men", image:mens_image_6, new_price: 60.0, old_price: 90.5 },
-    { id:18, name: "Coat_paint", category: "Men", image:mens_image_7, new_price: 60.0, old_price: 90.5 },
-    { id:19, name: "print_shirt", category: "Men", image:mens_image_5, new_price: 60.0, old_price: 90.5 },
-    { id:20, name: "women blazzer", category: "Women", image:women_20, new_price: 60.0, old_price: 100 },
-    { id:21, name: "women blazzer", category: "Women", image:women_21, new_price: 60.0, old_price: 100 },
-     { id:22, name: "women blazzer", category: "Women", image:Women_22, new_price: 60.0, old_price: 100 },
-      { id:23, name: "women blazzer", category: "Women", image:women_23, new_price: 60.0, old_price: 100 },
+    { id: 2, name: "dummyName", category: "Men", image:p2_img, new_price: 60.0, old_price: 90.5 },
+    { id: 3, name: "dummyName", category: "Women", image:p3_img, new_price: 75.0, old_price: 120.0 },
+    { id: 4, name: "dummyName", category: "Men", image: p4_img, new_price: 90.0, old_price: 140.0 },
+    { id: 5, name: "dummyName", category: "Men", image: p5_img, new_price: 45.0, old_price: 70.0 },
+    { id: 6, name: "dummyName", category: "Women", image: p6_img, new_price: 85.0, old_price: 130.0 },
+    { id: 7, name: "dummyName", category: "Women", image: pimg, new_price: 95.0, old_price: 150.0 },
+    { id: 8, name: "dummyName", category: "Women", image: pimg2, new_price: 55.0, old_price: 100.0 },
+    { id: 9, name: "dummyName", category: "Women", image: exclusive, new_price: 55.0, old_price: 100.0 },
+    { id: 10, name: "dummyName", category: "Kids", image: kids_image6, new_price: 65.0, old_price: 100.0 },
+    { id: 11, name: "dummyName", category: "Kids", image: kids_image7, new_price: 75.0, old_price: 100.0 },
+    { id: 13, name: "dummyName", category: "Kids", image: kids_image9, new_price: 90.0, old_price: 100.0 },
+    { id:15, name: "dummyName", category: "women", image:p1_img, new_price: 60.0, old_price: 90.5 },
+    { id:16, name: "dummyName", category: "Men", image:mens_image_8, new_price: 60.0, old_price: 90.5 },
+     { id:17, name: "dummyName", category: "Men", image:mens_image_6, new_price: 60.0, old_price: 90.5 },
+    { id:18, name: "dummyName", category: "Men", image:mens_image_7, new_price: 60.0, old_price: 90.5 },
+    { id:19, name: "dummyName", category: "Men", image:mens_image_5, new_price: 60.0, old_price: 90.5 },
+    { id:20, name: "dummyName", category: "Women", image:women_20, new_price: 60.0, old_price: 100 },
+    { id:21, name: "dummyName", category: "Women", image:women_21, new_price: 60.0, old_price: 100 },
+     { id:22, name: "dummyName", category: "Women", image:Women_22, new_price: 60.0, old_price: 100 },
+      { id:23, name: "dummyName", category: "Women", image:women_23, new_price: 60.0, old_price: 100 },
    //  { id:24, name: "women blazzer", category: "Women", image:women_24, new_price: 60.0, old_price: 100 },
-           { id:25, name: "women blazzer", category: "Women", image:women_25, new_price: 60.0, old_price: 100 },
-            { id:26, name: "women blazzer", category: "Women", image:women_26, new_price: 60.0, old_price: 100 },
-  { id:27, name: "women blazzer", category: "Women", image:women_27, new_price: 60.0, old_price: 100 },
-   { id:28, name: "women blazzer", category: "Men", image:man_20, new_price: 60.0, old_price: 100 },
-    { id:29, name: "women blazzer", category: "Men", image:man_21, new_price: 60.0, old_price: 100 },
-     { id:30, name: "women blazzer", category: "Men", image:man_22, new_price: 60.0, old_price: 100 },
-      { id:31, name: "women blazzer", category: "Men", image:men_23, new_price: 60.0, old_price: 100 },
-       { id:32, name: "women blazzer", category: "Men", image:men_24, new_price: 60.0, old_price: 100 },
-        { id:33, name: "women blazzer", category: "Men", image:men_25, new_price: 60.0, old_price: 100 },
-           { id:34, name: "women blazzer", category: "Men", image:men_26, new_price: 60.0, old_price: 100 },
-              { id:35, name: "women blazzer", category: "Men", image:men_27, new_price: 60.0, old_price: 100 },
-                 { id:36, name: "women blazzer", category: "Men", image:men_28, new_price: 60.0, old_price: 100 },
-                    { id:37, name: "women blazzer", category: "Men", image:men_29, new_price: 60.0, old_price: 100 },
-        { id:38, name: "women blazzer", category: "Men", image:men_30, new_price: 60.0, old_price: 100 },
-{ id:39, name: "women blazzer", category: "Women", image:women_28, new_price: 60.0, old_price: 100 },
-{ id:40, name: "women blazzer", category: "Women", image:women_29, new_price: 60.0, old_price: 100 },
+           { id:25, name: "dummyName", category: "Women", image:women_25, new_price: 60.0, old_price: 100 },
+            { id:26, name: "dummyName", category: "Women", image:women_26, new_price: 60.0, old_price: 100 },
+  { id:27, name: "dummyName", category: "Women", image:women_27, new_price: 60.0, old_price: 100 },
+   { id:28, name: "dummyName", category: "Men", image:man_20, new_price: 60.0, old_price: 100 },
+    { id:29, name: "dummyName", category: "Men", image:man_21, new_price: 60.0, old_price: 100 },
+     { id:30, name: "dummyName", category: "Men", image:man_22, new_price: 60.0, old_price: 100 },
+      { id:31, name: "dummyName", category: "Men", image:men_23, new_price: 60.0, old_price: 100 },
+       { id:32, name: "dummyName", category: "Men", image:men_24, new_price: 60.0, old_price: 100 },
+        { id:33, name: "dummyName", category: "Men", image:men_25, new_price: 60.0, old_price: 100 },
+           { id:34, name: "dummyName", category: "Men", image:men_26, new_price: 60.0, old_price: 100 },
+              { id:35, name: "dummyName", category: "Men", image:men_27, new_price: 60.0, old_price: 100 },
+                 { id:36, name: "dummyName", category: "Men", image:men_28, new_price: 60.0, old_price: 100 },
+                    { id:37, name: "dummyName", category: "Men", image:men_29, new_price: 60.0, old_price: 100 },
+        { id:38, name: "dummyName", category: "Men", image:men_30, new_price: 60.0, old_price: 100 },
+{ id:39, name: "dummyName", category: "Women", image:women_28, new_price: 60.0, old_price: 100 },
+{ id:40, name: "dummyName", category: "Women", image:women_29, new_price: 60.0, old_price: 100 },
 //{ id:41, name: "women blazzer", category: "Women", image:women_30, new_price: 60.0, old_price: 100 },
-{ id:42, name: "women blazzer", category: "Women", image:women_31, new_price: 60.0, old_price: 100 },
-{ id:43, name: "women blazzer", category: "Women", image:women_32, new_price: 60.0, old_price: 100 },
-{ id:44, name: "women blazzer", category: "Women", image:women_33, new_price: 60.0, old_price: 100 },
-{ id:45, name: "women blazzer", category: "Women", image:women_34, new_price: 60.0, old_price: 100 },
-{ id:46, name: "women blazzer", category: "Kids", image:kid10, new_price: 60.0, old_price: 100 },
-{ id:47, name: "women blazzer", category: "Kids", image:kid11, new_price: 60.0, old_price: 100 },
-{ id:48, name: "women blazzer", category: "Kids", image:kid12, new_price: 60.0, old_price: 100 },
-{ id:49, name: "women blazzer", category: "Kids", image:kid17, new_price: 60.0, old_price: 100 },
-{ id:50, name: "women blazzer", category: "Kids", image:kid18, new_price: 60.0, old_price: 100 },
-{ id:52, name: "women blazzer", category: "Kids", image:kid20, new_price: 60.0, old_price: 100 },
-
-
-
+{ id:42, name: "dummyName", category: "Women", image:women_31, new_price: 60.0, old_price: 100 },
+{ id:43, name: "dummyName", category: "Women", image:women_32, new_price: 60.0, old_price: 100 },
+{ id:44, name: "dummyName", category: "Women", image:women_33, new_price: 60.0, old_price: 100 },
+{ id:45, name: "dummyName", category: "Women", image:women_34, new_price: 60.0, old_price: 100 },
+{ id:46, name: "dummyName", category: "Kids", image:kid10, new_price: 60.0, old_price: 100 },
+{ id:47, name: "dummyName", category: "Kids", image:kid11, new_price: 60.0, old_price: 100 },
+{ id:48, name: "dummyName", category: "Kids", image:kid12, new_price: 60.0, old_price: 100 },
+{ id:49, name: "dummyName", category: "Kids", image:kid17, new_price: 60.0, old_price: 100 },
+{ id:50, name: "dummyName", category: "Kids", image:kid18, new_price: 60.0, old_price: 100 },
+{ id:52, name: "dummyName", category: "Kids", image:kid20, new_price: 60.0, old_price: 100 },
+{ id:53, name: "dummyName", category: "Kids", image:kids_image5, new_price: 60.0, old_price: 100 },
+{ id:54, name: "dummyName", category: "Kids", image:kid_13, new_price: 60.0, old_price: 100 },
+{ id:55, name: "dummyName", category: "Kids", image:kidBanner, new_price: 60.0, old_price: 100 },
    // { id: 9, name: "Shirt", category: "men", image: p9_img, new_price: 70.0, old_price: 110.0 },
     //{ id: 10, name: "Jumpsuit", category: "women", image: p10_img, new_price: 88.0, old_price: 135.0 },
    // { id: 11, name: "Sweater", category: "men", image: p11_img, new_price: 92.0, old_price: 145.0 },
