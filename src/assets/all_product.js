@@ -16,7 +16,7 @@ import mens_image_7 from '../assets/mens_image_7.jpg'
 import mens_image_5 from '../assets/mens_image5.jpg'
 import women_20 from '../assets/women_20.webp'
 import women_21 from '../assets/women_21.webp'
-import women_22 from '../assets/Women_22.jpg'
+import Women_22 from '../assets/Women_22.jpg'
 import women_23 from '../assets/women23.jpeg'
 //import women_24 from '../assets/women24.webp'
 import women_25 from '../assets/women25.jpg'
@@ -102,7 +102,7 @@ let all_product = [
     { id:19, name: "print_shirt", category: "Men", image:mens_image_5, new_price: 60.0, old_price: 90.5 },
     { id:20, name: "women blazzer", category: "Women", image:women_20, new_price: 60.0, old_price: 100 },
     { id:21, name: "women blazzer", category: "Women", image:women_21, new_price: 60.0, old_price: 100 },
-     { id:22, name: "women blazzer", category: "Women", image:women_22, new_price: 60.0, old_price: 100 },
+     { id:22, name: "women blazzer", category: "Women", image:Women_22, new_price: 60.0, old_price: 100 },
       { id:23, name: "women blazzer", category: "Women", image:women_23, new_price: 60.0, old_price: 100 },
    //  { id:24, name: "women blazzer", category: "Women", image:women_24, new_price: 60.0, old_price: 100 },
            { id:25, name: "women blazzer", category: "Women", image:women_25, new_price: 60.0, old_price: 100 },
