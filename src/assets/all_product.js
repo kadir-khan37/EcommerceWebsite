@@ -49,7 +49,7 @@ import kid17 from '../assets/kid17.webp'
 import kid18 from '../assets/kid18.webp'
 import kid20 from '../assets/kid20.webp'
 import kid_13 from '../assets/kid_13.webp'
-import kidBanner from '../assets/KidBanner.webp'
+import kidBanner from '../assets/kidBanner.webp'
 
 
 //import p12_img from '../assets/women6.webp'
