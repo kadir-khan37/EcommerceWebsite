@@ -7,7 +7,7 @@ const Item = (props) => {
         <div className="item">
           <Link to={`/Product/${props.id}`}>
         <img src={props.image} alt='product image'/>
-       
+  
      </Link>
       <p>{props.name}</p>
    <div className="item-prices">
