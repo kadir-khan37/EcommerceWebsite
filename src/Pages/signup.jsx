@@ -12,7 +12,7 @@ const Signup = () => {
   const handlesignup = async (e) => {
     e.preventDefault();
 
-    const response = await fetch('http://localhost:5000/signup', {
+    const response = await fetch('https://ecommerce-backend-fotr.onrender.com/signup', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, email, password }),
@@ -39,17 +39,20 @@ const Signup = () => {
             <form onSubmit={handlesignup}>
               <input 
                 type='text' 
-                placeholder='write your name' 
+                placeholder='write your name'
+                value={name}
                 onChange={(e) => setname(e.target.value)} 
               />
               <input 
                 type='email' 
                 placeholder='write your email' 
+                value={email}
                 onChange={(e) => setemail(e.target.value)} 
               />
               <input 
                 type="password" 
-                placeholder='write your password' 
+                placeholder='write your password'
+                value={password} 
                 onChange={(e) => setpassword(e.target.value)} 
               />
               <button type='submit'>Continue</button>

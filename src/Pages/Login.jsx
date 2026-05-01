@@ -13,8 +13,8 @@ const Login = () => {
   const handlelogin = async (e) => {
     e.preventDefault();
   
-    const response = await fetch('http://localhost:5000/login', {
-      method: 'POST',
+    const response = await fetch('https://ecommerce-backend-fotr.onrender.com/login', {
+      method: 'POST',   
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({email, password}),
     });
@@ -40,8 +40,8 @@ const Login = () => {
          
          <div className='loginsignup-fields'>
         <form onSubmit={handlelogin}>
-        <input type='email' placeholder='write your email' onChange={(e)=>setemail(e.target.value)}/>
-        <input type="password" placeholder='write your password' onChange={(e)=>setpassword(e.target.value)}/>
+        <input type='email' placeholder='write your email' value={email} onChange={(e)=>setemail(e.target.value)}/>
+        <input type="password"  placeholder='write your password' value={password} onChange={(e)=>setpassword(e.target.value)}/>
         <button type='Submit'>Continue</button>
         </form>
         </div>
