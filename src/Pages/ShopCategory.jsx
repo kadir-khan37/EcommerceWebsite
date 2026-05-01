@@ -3,12 +3,15 @@ import dropdown_icon from '../assets/dropdown_icon.png';
 import Item from '../Components/Item/Item';
 import { ShopContext } from '../ShopContext/Shopcontext'
 import '../CSS/ShopCategory.css'
+import Navbar from '../Components/Navbar';
 const ShopCategory = (props) => {
   const {all_product} = useContext(ShopContext);
   return (
+    <>
+    <Navbar/>
    <div className="shop-category Men">
     <div className="shopcategory-banner">
-      <img src={props.banner} alt='' height={500} width={400} />
+    <img src={props.banner} alt='' className="banner-img" />
        <div className='shopcategory-indexSort'>
         <p>
           Choose your product
@@ -31,6 +34,7 @@ const ShopCategory = (props) => {
     
    
     </div>
+    </>
   )
 }
 

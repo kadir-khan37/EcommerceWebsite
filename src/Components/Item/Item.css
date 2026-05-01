@@ -64,3 +64,11 @@
   height: auto;
   display: block;
 }
+.item {
+  width: 100%;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+}

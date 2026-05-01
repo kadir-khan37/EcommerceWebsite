@@ -11,13 +11,9 @@
     margin-bottom:20px;
 }
 
-.shopcategory-indexSort{
-    display: flex;
-    margin: 0px 170px;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom:40px;
-    
+.shopcategory-indexSort {
+  margin: 0 auto;
+  width: 90%;
 }
 
 .shopcategory-sort{
@@ -50,31 +46,29 @@
     font-weight: 500;
 }
 .shopcategory-products {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  padding: 20px;
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 20px;
+  width: 100%;
 }
 
 /* Tablet */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .shopcategory-products {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr) !important;
   }
 }
 
 /* Mobile */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .shopcategory-products {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }
-.shop-category.Men .shopcategory-banner img {
-  width: 100%;
-}
-.shop-category.Women .shopcategory-banner img {
-  width: 100%;
-}
-.shop-category.Kids .shopcategory-banner img {
-  width: 100%;
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .shopcategory-products {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
 }

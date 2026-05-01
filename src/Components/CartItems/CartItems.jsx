@@ -3,8 +3,20 @@ import './CartItems.css';
 import { useContext } from 'react';
 import remove_icon from '../../assets/remove.webp';
 import { ShopContext } from '../../ShopContext/Shopcontext'
+import { Link, useNavigate } from 'react-router-dom';
+import { useDispatch } from "react-redux";
+
 const CartItems = () => {
+const dispatch = useDispatch()
+const navigate = useNavigate();
+console.log(localStorage.getItem("token"))
 const { getTotalCartAmount,all_product, cartItems, removeFromCart } = useContext(ShopContext);
+const getout =()=>{
+    localStorage.removeItem("token");
+   
+    navigate('/');
+    alert("you are logout")
+}
   return (
 
     <div className='cartItems'>
@@ -57,13 +69,15 @@ const { getTotalCartAmount,all_product, cartItems, removeFromCart } = useContext
                             <p>${getTotalCartAmount()}</p>
                         </div>
                     </div>
-                    <button>PROCEED TO CHECKOUT</button>
+                    <button style={{backgroundColor:"green"}}>PROCEED TO CHECKOUT</button>
+                    <button onClick={getout}>Click for logout</button>
                 </div>
                 <div className="cartitems-promocode">
                     <p>If you have a promo code, Enter it here</p>
                     <div className="cartitems-promobox">
                         <input type='text' placeholder='promo code'/>
                         <button>submit</button>
+                       
                     </div>
                 </div>
             </div>
